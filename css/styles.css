@@ -1,0 +1,113 @@
+/*-- Color Palette based on your images --*/
+:root {
+    --background-purple: #4a3d66;
+    --text-lavender: #c8bfe0;
+    --container-dark-purple: #3a2f51;
+    --accent-glow: #e0d8f5;
+}
+
+body {
+    background-color: var(--background-purple);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-lavender);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased; /* Makes font look smoother */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* This is the main container */
+.main-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--container-dark-purple);
+    border: 1px solid var(--accent-glow);
+    box-shadow: 0 0 25px rgba(200, 191, 224, 0.1);
+    border-radius: 15px; /* Softer, more rounded corners */
+    overflow: hidden;
+}
+
+.content {
+    padding: 30px;
+}
+
+/* Style for profile picture */
+.pfp {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes it a circle */
+    border: 3px solid var(--text-lavender); /* Solid, clean border */
+    padding: 4px;
+    background-color: var(--background-purple);
+    margin-bottom: 20px;
+}
+
+/* name/handle with a soft glow */
+h1 {
+    color: var(--accent-glow);
+    text-shadow: 0 0 10px rgba(224, 216, 245, 0.5); /* Soft glow instead of hard shadow */
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+/* Bio text */
+.bio {
+    font-size: 1em;
+    color: var(--text-lavender);
+    line-height: 1.6;
+    max-width: 450px;
+    margin: 0 auto 30px auto; /* Center the bio text container */
+}
+
+/* The container for all your links */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between the links */
+    margin-top: 20px;
+}
+
+/* Styling for each individual link */
+.link-button {
+    background-color: transparent;
+    color: var(--text-lavender);
+    text-decoration: none;
+    padding: 15px;
+    border: 2px solid var(--text-lavender);
+    border-radius: 50px; /* Pill-shaped buttons */
+    transition: all 0.3s ease;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+    /* CSS FOR ICON ALIGNMENT */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adds space between the icon and text */
+}
+
+.link-button .fab, .link-button .fas {
+    font-size: 1.2em; /* Makes icons slightly bigger */
+}
+
+/* What happens when you hover over a link */
+.link-button:hover {
+    background-color: var(--text-lavender);
+    color: var(--container-dark-purple);
+    box-shadow: 0 0 15px rgba(200, 191, 224, 0.4);
+}
+
+/* Focus styles for accessibility */
+.link-button:focus {
+    outline: 2px solid var(--accent-glow);
+    outline-offset: 2px;
+}
+
+/* A little footer at the bottom */
+.footer {
+    margin-top: 40px;
+    font-size: 0.8em;
+    color: rgba(200, 191, 224, 0.6);
+}

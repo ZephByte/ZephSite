@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZephByte's Page</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ZephByte - Mobile Dev, Streamer, Minecraft Mod Maker. Welcome to my corner of the web!">
+    <meta name="keywords" content="mobile development, streaming, minecraft mods, ZephByte">
+    <meta name="author" content="ZephByte">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="ZephByte's Page">
+    <meta property="og:description" content="Mobile Dev, Streamer, Minecraft Mod Maker">
+    <meta property="og:image" content="https://www.zephbyte.dev/assets/images/pfp.png">
+    <meta property="og:url" content="https://www.zephbyte.dev">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZephByte's Page">
+    <meta name="twitter:description" content="Mobile Dev, Streamer, Minecraft Mod Maker">
+    <meta name="twitter:image" content="https://www.zephbyte.dev/assets/images/pfp.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     
     <!-- Google Fonts import for a cleaner, more modern font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,119 +34,8 @@
     <!-- FONT AWESOME CDN FOR ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- 
-        All the styling for your page is right here in the <style> tag.
-    -->
-    <style>
-        /*-- Color Palette based on your images --*/
-        :root {
-            --background-purple: #4a3d66;
-            --text-lavender: #c8bfe0;
-            --container-dark-purple: #3a2f51;
-            --accent-glow: #e0d8f5;
-        }
-
-        body {
-            background-color: var(--background-purple);
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-lavender);
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            -webkit-font-smoothing: antialiased; /* Makes font look smoother */
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* This is the main container */
-        .main-container {
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: var(--container-dark-purple);
-            border: 1px solid var(--accent-glow);
-            box-shadow: 0 0 25px rgba(200, 191, 224, 0.1);
-            border-radius: 15px; /* Softer, more rounded corners */
-            overflow: hidden;
-        }
-
-        .content {
-            padding: 30px;
-        }
-
-        /* Style for profile picture */
-        .pfp {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%; /* Makes it a circle */
-            border: 3px solid var(--text-lavender); /* Solid, clean border */
-            padding: 4px;
-            background-color: var(--background-purple);
-            margin-bottom: 20px;
-        }
-
-        /* name/handle with a soft glow */
-        h1 {
-            color: var(--accent-glow);
-            text-shadow: 0 0 10px rgba(224, 216, 245, 0.5); /* Soft glow instead of hard shadow */
-            margin: 0 0 10px 0;
-            font-size: 2.5em;
-            font-weight: 700;
-        }
-
-        /* Bio text */
-        .bio {
-            font-size: 1em;
-            color: var(--text-lavender);
-            line-height: 1.6;
-            max-width: 450px;
-            margin: 0 auto 30px auto; /* Center the bio text container */
-        }
-
-        /* The container for all your links */
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px; /* Space between the links */
-            margin-top: 20px;
-        }
-
-        /* Styling for each individual link */
-        .link-button {
-            background-color: transparent;
-            color: var(--text-lavender);
-            text-decoration: none;
-            padding: 15px;
-            border: 2px solid var(--text-lavender);
-            border-radius: 50px; /* Pill-shaped buttons */
-            transition: all 0.3s ease;
-            font-weight: 700;
-            letter-spacing: 1px;
-            
-            /* CSS FOR ICON ALIGNMENT */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px; /* Adds space between the icon and text */
-        }
-
-        .link-button .fab, .link-button .fas {
-            font-size: 1.2em; /* Makes icons slightly bigger */
-        }
-
-        /* What happens when you hover over a link */
-        .link-button:hover {
-            background-color: var(--text-lavender);
-            color: var(--container-dark-purple);
-            box-shadow: 0 0 15px rgba(200, 191, 224, 0.4);
-        }
-
-        /* A little footer at the bottom */
-        .footer {
-            margin-top: 40px;
-            font-size: 0.8em;
-            color: rgba(200, 191, 224, 0.6);
-        }
-
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -136,7 +45,7 @@
         <!-- The main content area -->
         <div class="content">
             
-            <img class="pfp" src="pfp.png" alt="Your Profile Picture">
+            <img class="pfp" src="assets/images/pfp.png" alt="ZephByte's Profile Picture">
 
             <h1>ZephByte</h1>
 
@@ -173,5 +82,7 @@
         </div>
     </div>
 
+    <!-- External JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
