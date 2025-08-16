@@ -5,44 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZephByte's Page</title>
     
-    <!-- SEO Meta Tags -->
     <meta name="description" content="ZephByte - Mobile Dev, Streamer, Minecraft Mod Maker. Welcome to my corner of the web!">
     <meta name="keywords" content="mobile development, streaming, minecraft mods, ZephByte">
     <meta name="author" content="ZephByte">
     
-    <!-- Open Graph tags for social sharing -->
     <meta property="og:title" content="ZephByte's Page">
     <meta property="og:description" content="Mobile Dev, Streamer, Minecraft Mod Maker">
     <meta property="og:image" content="https://www.zephbyte.dev/assets/images/pfp.png">
     <meta property="og:url" content="https://www.zephbyte.dev">
     <meta property="og:type" content="website">
     
-    <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ZephByte's Page">
     <meta name="twitter:description" content="Mobile Dev, Streamer, Minecraft Mod Maker">
     <meta name="twitter:image" content="https://www.zephbyte.dev/assets/images/pfp.png">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     
-    <!-- Google Fonts import for a cleaner, more modern font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- FONT AWESOME CDN FOR ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- External CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- This is where page content goes -->
-    <div class="main-container">
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
 
-        <!-- The main content area -->
+    <div class="main-container">
         <div class="content">
             
             <img class="pfp" src="assets/images/pfp.png" alt="ZephByte's Profile Picture">
@@ -50,12 +46,9 @@
             <h1>ZephByte</h1>
 
             <p class="bio">
-                Mobile Dev, Streamer, Minecraft Mod Maker. Basically someone with too many hobbies. Welcome to my corner of the web!
+                <i class='fas fa-laptop-code'></i> Mobile Dev | <i class='fas fa-cube'></i> Minecraft Mod Maker | <i class='fas fa-video'></i> Streamer | <i class='fas fa-rocket'></i> Always learning. Basically someone with too many hobbies and not enough time. Welcome to my corner of the web!
             </p>
 
-            <!--
-            LINKS with ICONS
-            -->
             <div class="links-container">
                 <a href="https://github.com/ZephByte" class="link-button">
                     <i class="fab fa-github"></i>
@@ -79,10 +72,35 @@
                 </a>
             </div>
 
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-stats">
+                        <!-- <span class="stat">
+                            <i class="fas fa-code"></i>
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Projects</span>
+                        </span>
+                        <span class="stat">
+                            <i class="fas fa-users"></i>
+                            <span class="stat-number" data-target="1000">0</span>
+                            <span class="stat-label">Followers</span>
+                        </span>
+                        <span class="stat">
+                            <i class="fas fa-gamepad"></i>
+                            <span class="stat-number" data-target="25">0</span>
+                            <span class="stat-label">Mods</span>
+                        </span> -->
+                    </div>
+                    <div class="footer-text">
+                        <p>Made with <i class="fas fa-heart"></i> and lots of distractions.</p>
+                        <p class="footer-year">© 2024 ZephByte</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <!-- External JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>
