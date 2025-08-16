@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZephByte's Page</title>
+    
+    <!-- Google Fonts import for a cleaner, more modern font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- 
+        All the styling for your page is right here in the <style> tag.
+        This is called "Internal CSS". It's a great way to keep everything
+        in one file for Neocities.
+    -->
+    <style>
+        /*-- Color Palette based on your images --*/
+        :root {
+            --background-purple: #4a3d66;
+            --text-lavender: #c8bfe0;
+            --container-dark-purple: #3a2f51;
+            --accent-glow: #e0d8f5;
+        }
+
+        body {
+            /* Using the new color palette and font */
+            background-color: var(--background-purple);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-lavender);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased; /* Makes font look smoother */
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* This is the main container, with a softer, modern look */
+        .main-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: var(--container-dark-purple);
+            border: 1px solid var(--accent-glow);
+            box-shadow: 0 0 25px rgba(200, 191, 224, 0.1);
+            border-radius: 15px; /* Softer, more rounded corners */
+            overflow: hidden;
+        }
+
+        /* The title bar is removed for a cleaner look, content starts directly */
+        .content {
+            padding: 30px;
+        }
+
+        /* Style for your profile picture, matching the new vibe */
+        .pfp {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Makes it a circle */
+            border: 3px solid var(--text-lavender); /* Solid, clean border */
+            padding: 4px;
+            background-color: var(--background-purple);
+            margin-bottom: 20px;
+        }
+
+        /* Your name/handle with a soft glow */
+        h1 {
+            color: var(--accent-glow);
+            text-shadow: 0 0 10px rgba(224, 216, 245, 0.5); /* Soft glow instead of hard shadow */
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        /* Your bio text */
+        .bio {
+            font-size: 1em;
+            color: var(--text-lavender);
+            line-height: 1.6;
+            max-width: 450px;
+            margin: 0 auto 30px auto; /* Center the bio text container */
+        }
+
+        /* The container for all your links */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between the links */
+            margin-top: 20px;
+        }
+
+        /* Styling for each individual link */
+        .link-button {
+            background-color: transparent;
+            color: var(--text-lavender);
+            text-decoration: none;
+            padding: 15px;
+            border: 2px solid var(--text-lavender);
+            border-radius: 50px; /* Pill-shaped buttons */
+            transition: all 0.3s ease;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* What happens when you hover over a link */
+        .link-button:hover {
+            background-color: var(--text-lavender);
+            color: var(--container-dark-purple);
+            box-shadow: 0 0 15px rgba(200, 191, 224, 0.4);
+        }
+
+        /* A little footer at the bottom */
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: rgba(200, 191, 224, 0.6);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- This is where all your page content goes! -->
+    <div class="main-container">
+
+        <!-- The main content area -->
+        <div class="content">
+            
+            <!-- 
+                PROFILE PICTURE
+                I've updated this to use your cartoon avatar!
+            -->
+            <img class="pfp" src="pfp.png" alt="Your Profile Picture">
+
+            <!-- 
+                YOUR NAME
+                Change this to your name or online handle.
+            -->
+            <h1>ZephByte</h1>
+
+            <!-- 
+                YOUR BIO
+                Write a short sentence or two about yourself.
+            -->
+            <p class="bio">
+                Mobile Dev, Streamer, Minecraft Mod Maker. Basically someone with too many hobbies. Welcome to my corner of the web!
+            </p>
+
+            <!-- 
+                YOUR LINKS
+                This is the most important part!
+                - To change where a link goes, edit the href="..." part.
+                - To change the text on the button, edit the text between > and </a>.
+                - To add a new link, copy a whole line from <a ...> to </a>.
+                - To remove a link, delete the whole line.
+            -->
+            <div class="links-container">
+                <a href="https://github.com/ZephByte" class="link-button">GitHub</a>
+                <a href="https://twitter.com/ZephByte" class="link-button">Twitter</a>
+                <a href="https://twitch.tv/ZephByte" class="link-button">Twitch</a>
+                <a href="https://modrinth.com/user/ZephByte" class="link-button">Modrinth</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
