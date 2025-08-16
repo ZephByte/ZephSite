@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZephByte's Page</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
     <!-- Google Fonts import for a cleaner, more modern font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- FONT AWESOME CDN FOR ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- 
         All the styling for your page is right here in the <style> tag.
-        This is called "Internal CSS". It's a great way to keep everything
-        in one file for Neocities.
     -->
     <style>
         /*-- Color Palette based on your images --*/
@@ -26,7 +27,7 @@
         }
 
         body {
-            /* Using the new color palette and font */
+            /* This 
             background-color: var(--background-purple);
             font-family: 'Poppins', sans-serif;
             color: var(--text-lavender);
@@ -37,7 +38,7 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* This is the main container, with a softer, modern look */
+        /* This is the main container */
         .main-container {
             max-width: 600px;
             margin: 20px auto;
@@ -48,12 +49,11 @@
             overflow: hidden;
         }
 
-        /* The title bar is removed for a cleaner look, content starts directly */
         .content {
             padding: 30px;
         }
 
-        /* Style for your profile picture, matching the new vibe */
+        /* Style for profile picture */
         .pfp {
             width: 120px;
             height: 120px;
@@ -64,7 +64,7 @@
             margin-bottom: 20px;
         }
 
-        /* Your name/handle with a soft glow */
+        /* name/handle with a soft glow */
         h1 {
             color: var(--accent-glow);
             text-shadow: 0 0 10px rgba(224, 216, 245, 0.5); /* Soft glow instead of hard shadow */
@@ -73,7 +73,7 @@
             font-weight: 700;
         }
 
-        /* Your bio text */
+        /* Bio text */
         .bio {
             font-size: 1em;
             color: var(--text-lavender);
@@ -101,6 +101,16 @@
             transition: all 0.3s ease;
             font-weight: 700;
             letter-spacing: 1px;
+            
+            /* CSS FOR ICON ALIGNMENT */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Adds space between the icon and text */
+        }
+
+        .link-button .fab, .link-button .fas {
+            font-size: 1.2em; /* Makes icons slightly bigger */
         }
 
         /* What happens when you hover over a link */
@@ -121,47 +131,42 @@
 </head>
 <body>
 
-    <!-- This is where all your page content goes! -->
+    <!-- This is where page content goes -->
     <div class="main-container">
 
         <!-- The main content area -->
         <div class="content">
             
-            <!-- 
-                PROFILE PICTURE
-                I've updated this to use your cartoon avatar!
-            -->
             <img class="pfp" src="pfp.png" alt="Your Profile Picture">
 
-            <!-- 
-                YOUR NAME
-                Change this to your name or online handle.
-            -->
             <h1>ZephByte</h1>
 
-            <!-- 
-                YOUR BIO
-                Write a short sentence or two about yourself.
-            -->
             <p class="bio">
                 Mobile Dev, Streamer, Minecraft Mod Maker. Basically someone with too many hobbies. Welcome to my corner of the web!
             </p>
 
-            <!-- 
-                YOUR LINKS
-                This is the most important part!
-                - To change where a link goes, edit the href="..." part.
-                - To change the text on the button, edit the text between > and </a>.
-                - To add a new link, copy a whole line from <a ...> to </a>.
-                - To remove a link, delete the whole line.
+            <!--
+            LINKS with ICONS
             -->
             <div class="links-container">
-                <a href="https://github.com/ZephByte" class="link-button">GitHub</a>
-                <a href="https://twitter.com/ZephByte" class="link-button">Twitter</a>
-                <a href="https://twitch.tv/ZephByte" class="link-button">Twitch</a>
-                <a href="https://modrinth.com/user/ZephByte" class="link-button">Modrinth</a>
+                <a href="https://github.com/ZephByte" class="link-button">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://twitter.com/ZephByte" class="link-button">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://twitch.tv/ZephByte" class="link-button">
+                    <i class="fab fa-twitch"></i>
+                    <span>Twitch</span>
+                </a>
+                <a href="https://modrinth.com/user/ZephByte" class="link-button">
+                    <i class="fas fa-wrench"></i> 
+                    <span>Modrinth</span>
+                </a>
             </div>
-            
+
         </div>
     </div>
 
